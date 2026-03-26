@@ -138,6 +138,7 @@ const B2bdatabase = ({ isSeoPage = false, initialFilters = {} }) => {
           email: sampleForm.email,
           phone: sampleForm.phoneNumber,
           datasetDetails: selectedDatasetForSample,
+          source: window.location.hostname,
         }),
       });
     } catch (error) {
@@ -953,7 +954,7 @@ const B2bdatabase = ({ isSeoPage = false, initialFilters = {} }) => {
                   const res = await fetch(`${API_URL}/api/forms/submit`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(payload),
+                    body: JSON.stringify({ ...payload, source: window.location.hostname }),
                   });
                   if (res.ok) {
                     alert("Request submitted successfully!");
