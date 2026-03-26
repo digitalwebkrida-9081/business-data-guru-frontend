@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://businessdatalabs.com
+
+# Sitemaps
+Sitemap: https://businessdatalabs.com/sitemap.xml
