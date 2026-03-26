@@ -132,7 +132,7 @@ export default function Footer() {
             </p>
             <p className="flex items-center gap-2">
               <IoMail className="text-white" />{" "}
-              <span>businessdatalabs@gmail.com</span>
+              <span>businessdataguru@gmail.com</span>
             </p>
           </div>
         </div>

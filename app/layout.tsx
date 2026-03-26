@@ -37,25 +37,25 @@ export default async function RootLayout({
   // Helper to determine tracking IDs based on the domain
   const getTrackingIds = (hostname: string) => {
     // Check .com.au first because it also contains .au
-    if (hostname.includes("businessdatalabs.com.au")) {
+    if (hostname.includes("businessdataguru.com.au")) {
       return {
         GTM_ID: "YOUR_COM_AU_GTM_ID",
-        GA_ID: "G-Y9JYHWDQJR", // ID you provided earlier
+        GA_ID: "", // ID you provided earlier
         AW_ID: "YOUR_COM_AU_AW_ID",
       };
     }
-    if (hostname.includes("businessdatalabs.au")) {
+    if (hostname.includes("businessdataguru.au")) {
       // This will match .au (but not .com.au due to the check above)
       return {
         GTM_ID: "YOUR_AU_GTM_ID",
-        GA_ID: "G-80CQE197ZM",
+        GA_ID: "",
         AW_ID: "YOUR_AU_AW_ID",
       };
     }
     // Default to .com
     return {
-      GTM_ID: "GTM-WDLCQLB9",
-      GA_ID: "G-V7YK8CSH0Q",
+      GTM_ID: "",
+      GA_ID: "",
       AW_ID: "",
     };
   };

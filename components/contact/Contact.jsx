@@ -87,7 +87,7 @@ export default function ContactUsPage() {
                       Email Address
                     </p>
                     <p className="text-sm text-gray-500">
-                      businessdatalabs@gmail.com
+                      businessdataguru@gmail.com
                     </p>
                   </div>
                 </div>

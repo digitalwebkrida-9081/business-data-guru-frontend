@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://businessdatalabs.com
+Host: https://businessdataguru.com
 
 # Sitemaps
-Sitemap: https://businessdatalabs.com/sitemap.xml
+Sitemap: https://businessdataguru.com/sitemap.xml

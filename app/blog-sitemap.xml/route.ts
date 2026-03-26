@@ -21,7 +21,7 @@ function escapeXml(unsafe: string): string {
 export async function GET(request: Request) {
   const host = request.headers.get('host');
   const scheme = request.headers.get('x-forwarded-proto') || 'https';
-  const baseUrl = host ? `${scheme}://${host}` : 'https://businessdatalabs.com';
+  const baseUrl = host ? `${scheme}://${host}` : 'https://businessdataguru.com';
   let urls: any[] = [];
   try {
     const res = await fetch(`${apiUrl}/api/posts`, { next: { revalidate: 3600 } });

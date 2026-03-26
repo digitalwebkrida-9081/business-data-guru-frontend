@@ -7,7 +7,7 @@ export const revalidate = 3600;
 export async function GET(request: Request) {
   const host = request.headers.get('host');
   const scheme = request.headers.get('x-forwarded-proto') || 'https';
-  const baseUrl = host ? `${scheme}://${host}` : 'https://businessdatalabs.com';
+  const baseUrl = host ? `${scheme}://${host}` : 'https://businessdataguru.com';
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>

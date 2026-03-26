@@ -53,8 +53,8 @@ export async function generateMetadata(
   const titleCategory = toTitleCase(categoryStr.replace(/-/g, " "));
   const titleLocation = toTitleCase(countryStr.replace(/-/g, " "));
 
-  const infoTitle = `List of ${titleCategory} in ${titleLocation}`;
-  const infoDesc = `Download the list of ${titleCategory} in ${titleLocation}. Businessdatalabs provides an accurate directory and the latest data on the number of ${titleCategory} in ${titleLocation}.`;
+  const infoTitle = `Buy Business of ${titleCategory} in ${titleLocation} | Business Data Guru`;
+  const infoDesc = `Download the list of ${titleCategory} in ${titleLocation}. Businessdataguru provides an accurate directory and the latest data on the number of ${titleCategory} in ${titleLocation}.`;
 
   return {
     title: infoTitle,

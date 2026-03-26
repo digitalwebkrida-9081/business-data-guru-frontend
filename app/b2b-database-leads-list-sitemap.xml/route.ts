@@ -39,7 +39,7 @@ function slugify(text: string): string {
 export async function GET(request: Request) {
   const host = request.headers.get('host');
   const scheme = request.headers.get('x-forwarded-proto') || 'https';
-  const baseUrl = host ? `${scheme}://${host}` : 'https://businessdatalabs.com';
+  const baseUrl = host ? `${scheme}://${host}` : 'https://businessdataguru.com';
   let sitemaps: any[] = [];
 
   try {

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://businessdatalabs.com', 
+  siteUrl: 'https://businessdataguru.com', 
   generateRobotsTxt: true, 
   outDir: 'dist',
   sitemapSize: 7000,

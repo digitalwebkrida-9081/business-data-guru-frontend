@@ -28,7 +28,7 @@ export async function GET(
 ) {
   const host = request.headers.get('host');
   const scheme = request.headers.get('x-forwarded-proto') || 'https';
-  const baseUrl = host ? `${scheme}://${host}` : 'https://businessdatalabs.com';
+  const baseUrl = host ? `${scheme}://${host}` : 'https://businessdataguru.com';
   const { slug } = await params;
 
   // Expected format: leads-list-[country-slug].xml
