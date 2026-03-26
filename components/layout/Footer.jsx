@@ -18,12 +18,11 @@ export default function Footer() {
           <div className="flex items-center gap-2 text-xl font-bold">
             <span className="text-[#2F66F6] rounded-full px-2 py-1">
               <Image
-                src="/images/logos/main-logo/small-logo.png"
+                src="/images/logo.png"
                 alt="Business Data Guru Logo"
-                width={48} // specify actual display width
-                height={48} // specify actual display height
+                width={48}
+                height={48}
                 className="block"
-                priority={true} // optional if this is above-the-fold
               />
             </span>
             Business Data Guru
