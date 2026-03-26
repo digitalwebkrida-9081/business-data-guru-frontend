@@ -54,7 +54,7 @@ export default async function RootLayout({
     }
     // Default to .com
     return {
-      GTM_ID: "",
+      GTM_ID: "GTM-NG9ZV463",
       GA_ID: "G-7S0F4MDV4BB",
       AW_ID: "",
     };
