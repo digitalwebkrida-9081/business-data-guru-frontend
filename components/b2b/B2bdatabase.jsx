@@ -1070,7 +1070,7 @@ const B2bdatabase = ({ isSeoPage = false, initialFilters = {} }) => {
             {/* Logo */}
             <div className="flex justify-center mb-6">
               <div className="flex items-center gap-2 text-slate-900 font-bold text-2xl">
-                <img src="/images/logo.jpg" alt="logo" className="w-10 " />
+                <img src="/images/logo.png" alt="logo" className="w-10 " />
                 Business Data Guru
               </div>
             </div>
