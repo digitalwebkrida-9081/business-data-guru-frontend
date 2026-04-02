@@ -671,7 +671,7 @@ const B2bdatabase = ({ isSeoPage = false, initialFilters = {} }) => {
                               <Link
                                 href={
                                   item.countryCode
-                                    ? `/b2b-database/leads-list-of-${item.categorySlug}-in-${(item.countryName || "").toLowerCase().replace(/\s+/g, "-")}`
+                                    ? `/b2b-database/leads-list-of-${(item.categorySlug || "").replace(/_/g, "-")}-in-${(item.countryName || "").toLowerCase().replace(/\s+/g, "-")}`
                                     : `/dataset-detail?id=${item.id}&label=${encodeURIComponent(item.displayLoc || "")}`
                                 }
                                 className="text-[14px] hover:text-blue-600 transition group-hover:text-blue-600 font-medium"
@@ -702,7 +702,7 @@ const B2bdatabase = ({ isSeoPage = false, initialFilters = {} }) => {
                                 <Link
                                   href={
                                     item.countryCode
-                                      ? `/b2b-database/leads-list-of-${item.categorySlug}-in-${(item.countryName || "").toLowerCase().replace(/\s+/g, "-")}`
+                                      ? `/b2b-database/leads-list-of-${(item.categorySlug || "").replace(/_/g, "-")}-in-${(item.countryName || "").toLowerCase().replace(/\s+/g, "-")}`
                                       : `/dataset-detail?id=${item.id}&label=${encodeURIComponent(item.displayLoc || "")}`
                                   }
                                   className="bg-blue-600 text-white px-5 py-2 rounded-full font-bold text-[13px] hover:bg-blue-700 transition inline-flex items-center justify-center whitespace-nowrap"
