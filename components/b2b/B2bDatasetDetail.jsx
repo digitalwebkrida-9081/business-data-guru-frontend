@@ -409,6 +409,7 @@ const B2bDatasetDetail = ({ id, country, category, initialDataset = null }) => {
               id: id,
               ...form,
               phoneNumber: form.phoneNumber,
+              source: window.location.hostname,
             }),
           },
         );
@@ -1697,6 +1698,7 @@ const B2bDatasetDetail = ({ id, country, category, initialDataset = null }) => {
                                 city: filterCity,
                               },
                               price: finalPrice,
+                              source: window.location.hostname,
                             }),
                           },
                         );
@@ -1733,6 +1735,7 @@ const B2bDatasetDetail = ({ id, country, category, initialDataset = null }) => {
                                   state: filterState,
                                   city: filterCity,
                                 },
+                                source: window.location.hostname,
                               }),
                             },
                           );
