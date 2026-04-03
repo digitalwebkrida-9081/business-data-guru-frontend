@@ -143,7 +143,12 @@ const B2bdatabase = ({ isSeoPage = false, initialFilters = {} }) => {
           name: sampleForm.fullName,
           email: sampleForm.email,
           phone: sampleForm.phoneNumber,
-          datasetDetails: selectedDatasetForSample,
+          datasetDetails: {
+            ...selectedDatasetForSample,
+            country: selectedDatasetForSample.countryName,
+            state: selectedDatasetForSample.stateName,
+            city: selectedDatasetForSample.cityName,
+          },
           source: window.location.hostname,
         }),
       });
