@@ -295,7 +295,7 @@ const B2bdatabase = ({ isSeoPage = false, initialFilters = {} }) => {
         try {
           const API_URL = process.env.NEXT_PUBLIC_API_URL || "";
           const res = await fetch(
-            `${API_URL}/api/merged/categories?country=${countryObj.code}&limit=10000`,
+            `${API_URL}/api/merged/categories?country=${countryObj.code}&limit=10000&domain=${window.location.hostname}`,
           );
           const result = await res.json();
           if (result.success && result.data?.categories) {
@@ -377,7 +377,7 @@ const B2bdatabase = ({ isSeoPage = false, initialFilters = {} }) => {
 
       // If state, city, or category is selected, use the filtered count endpoint
       if (state || city || category) {
-        let url = `${API_URL}/api/merged/categories-count?country=${countryCode}`;
+        let url = `${API_URL}/api/merged/categories-count?country=${countryCode}&domain=${window.location.hostname}`;
         if (state) url += `&state=${encodeURIComponent(state)}`;
         if (city) url += `&city=${encodeURIComponent(city)}`;
         if (category) {
@@ -403,7 +403,7 @@ const B2bdatabase = ({ isSeoPage = false, initialFilters = {} }) => {
         }
       } else {
         // No state/city/category filter — use the fast cached categories endpoint
-        let url = `${API_URL}/api/merged/categories?country=${countryCode}`;
+        let url = `${API_URL}/api/merged/categories?country=${countryCode}&domain=${window.location.hostname}`;
         url += `&page=${currentPage}&limit=${ITEMS_PER_PAGE}`;
 
         const catRes = await fetch(url);
